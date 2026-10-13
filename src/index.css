@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-burgundy: #4A0E17;
+    --color-burgundy-dark: #32080E;
+    --color-burgundy-light: #5E1420;
+    --color-gold: #C5A059;
+    --color-gold-light: #DFC387;
+    --color-gold-dark: #A78443;
+    --color-ivory: #F9F8F6;
+    --color-charcoal: #1E1B18;
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Montserrat", sans-serif;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  /* Optimize touch inputs on mobile */
+  input, select, textarea, button {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
+    border-radius: 2px;
+  }
+}
+
+/* Custom luxury utilities */
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Gold shimmer & subtle border accents */
+.border-gold-subtle {
+  border-color: rgba(197, 160, 89, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DFC387 0%, #C5A059 50%, #9F7A38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, transparent, #C5A059, transparent) 1;
+}
+
+/* Safe-area insets for modern mobile phones (iPhone notch/dynamic island & home bar) */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.mb-safe {
+  margin-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* Smooth touch scrolling */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #32080E;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 3px;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Hotel Aurelia Web Builder",
+  "description": "Instantly generate an elegant, responsive single-page HTML/CSS website tailored for the luxury boutique Hotel Aurelia brand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
